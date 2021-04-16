@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Default";
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype");
+}
+* {
+  font-family: "Default";
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+}
+.resizable-panel:after {
+  content: " ";
+  background-color: #aaa;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  cursor: w-resize;
+}
+
+.resizable-panel {
+  flex-wrap: wrap;
+  position: relative;
+  width: 200px;
+  min-width: 120px;
+  padding-left: 4px;
+  height: 80%;
+  background-color: #f0f0ff;
+}
